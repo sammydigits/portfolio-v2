@@ -1,28 +1,74 @@
-<html>
-<head>
-<style>
-ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-li {
-  padding: 1em;
-  background: #ccc;
-}
-</style>
-</head>
-<body>
-<ul>
-  <li>One</li>
-  <li>Two</li>
-  <li>Three</li>
-  <li>Four</li>
-  <li>Five</li>
-  <li>Six</li>
-</ul>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    <style>
+      .container {
+        display: grid;
+        border: solid 1px blue;
+        grid-template-rows: 230px 230px 230px;
+        grid-auto-flow: row;
+        grid-gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      @media (max-width: 599px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        .first {
+          grid-column-start: 1;
+          grid-column-end: 1;
+        }
+      }
+      @media (min-width: 600px) {
+        .container {
+          grid-template-columns: 1fr 1fr;
+        }
+        .first {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+      }
+      @media (min-width: 900px) {
+        .container {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        .first {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+      }
+      .card {
+        border: solid 1px red;
+      }
+      .card-image  {
+        display: block;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card first">
+        <a href="#" class="card-image" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')">&nbsp;</a>
+        <p>This is a card 1</p>
+      </div>
+      <div class="card">This is a card 2</div>
+      <div class="card">This is a card 3</div>
+      <div class="card">This is a card 4</div>
+      <div class="card">This is a card 5</div>
+      <div class="card">This is a card 6</div>
+      <div class="card">This is a card 7</div>
+      <div class="card">This is a card 8</div>
+    </div>
+  </body>
 </html>
