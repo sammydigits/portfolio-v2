@@ -59,8 +59,7 @@
           grid-column-end: 4;
         }
       }
-
-      .card {
+      .card-image {
         background-color: #f4f6f8;
         background-repeat: no-repeat;
         background-position: center;
@@ -69,7 +68,26 @@
         transition: all .5s ease-in-out;
         padding-top: 400px;
       }
-      h1, h2 {
+      .card-content {
+        padding-top: 15px;
+      }
+      .card-content a {
+        text-decoration: none;
+        color: #222;
+        font-size: 19px;
+      }
+      .card-content a:active,
+      .card-content a:focus,
+      .card-content a:hover {
+        color: #b70038;
+      }
+      .card-content p {
+        font-size: 12px;
+        color: #5d738d;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      h1 {
         font-family: 'Playfair Display', serif;
         font-weight: 400;
         color: #b70038;
@@ -81,9 +99,13 @@
       }
       .header > ul > li {
         display: inline-block;
+      }
+      .header a {
         font-size: 14px;
         letter-spacing: 2px;
         text-transform: uppercase;
+        color: #222;
+        text-decoration: none;
       }
       .header > ul > li:first-child {
         margin-right: 10px;
@@ -94,22 +116,62 @@
     <div class="container">
       <div class="header">
         <h1>Sam Thompson</h1>
-        <h2>Web Developer</h2>
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="card first" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')">
-        <p>This is a card 1</p>
+      <div class="first">
+        <div class="card-image" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')"></div>
+        <div class="card-content">
+          <a href="project.html">Google UX Workshop</a>
+          <p>January 2018</p>
+        </div>
       </div>
-      <div class="card" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')">This is a card 2</div>
-      <div class="card" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')">This is a card 3</div>
-      <div class="card" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')">This is a card 4</div>
-      <div class="card" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')">This is a card 5</div>
-      <div class="card" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')">This is a card 6</div>
-      <div class="card" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')">This is a card 7</div>
-      <div class="card" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')">This is a card 8</div>
+      <div>
+        <div class="card-image" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')"></div>
+        <div class="card-content">
+          <a href="project.html">AMP Theme for Drupal 7</a>
+          <p>November 2017</p>
+        </div>
+      </div>
+      <div>
+        <div class="card-image" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')"></div>
+        <div class="card-content">
+          <a href="project.html">From Concept To Production</a>
+          <p>September 2017</p>
+        </div>
+      </div>
+      <div>
+        <div class="card-image" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')"></div>
+        <div class="card-content">
+          <p>This is a card 4</p>
+        </div>
+      </div>
+      <div>
+        <div class="card-image" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')"></div>
+        <div class="card-content">
+          <p>This is a card 5</p>
+        </div>
+      </div>
+      <div>
+        <div class="card-image" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')"></div>
+        <div class="card-content">
+          <p>This is a card 6</p>
+        </div>
+      </div>
+      <div>
+        <div class="card-image" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')"></div>
+        <div class="card-content">
+          <p>This is a card 7</p>
+        </div>
+      </div>
+      <div>
+        <div class="card-image" style="background-image:url('http://nubia.aspirethemes.com/content/images/2017/12/20-1.jpg')"></div>
+        <div class="card-content">
+          <p>This is a card 8</p>
+        </div>
+      </div>
       <div class="footer">
         <p>&copy; 1996 - 2018 Sam Thompson</p>
       </div>
