@@ -23,7 +23,6 @@
       }
       .header,
       .footer {
-        background-color: #f4f6f8;
         width: 100%;
         text-align: center;
       }
@@ -66,7 +65,7 @@
         background-size: cover;
         -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
-        padding-top: 400px;
+        padding-top: 250px;
       }
       .card-content {
         padding-top: 15px;
@@ -90,19 +89,30 @@
         color: #5d738d;
         text-transform: uppercase;
         letter-spacing: 1px;
+        margin-top: 10px;
       }
       h1 {
         font-family: 'Playfair Display', serif;
         font-weight: 400;
         color: #b70038;
       }
-      .header > ul {
+      .header .nav-line {
+        background-image: url('images/line.png');
+        background-repeat: repeat-x;
+        background-position: 0px 9px;
+      }
+      .header ul {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        background-color: #fff;
         list-style-type: none;
-        padding: 0;
+        padding: 0 20px;
         margin: 0 0 30px 0;
       }
-      .header > ul > li {
+      .header ul > li {
         display: inline-block;
+        margin-right: 15px;
       }
       .header a {
         font-size: 14px;
@@ -111,8 +121,11 @@
         color: #222;
         text-decoration: none;
       }
-      .header > ul > li:first-child {
-        margin-right: 10px;
+      .header ul > li:last-child {
+        margin-right: 0px;
+      }
+      .footer {
+        background-color: #f4f6f8;
       }
     </style>
   </head>
@@ -120,12 +133,15 @@
     <div class="container">
       <div class="header">
         <h1>Sam Thompson</h1>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-line">
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="first">
+      <div class="first" id="portfolio">
         <div class="card-image" style="background-image:url('images/google-balloon.png')"></div>
         <div class="card-content">
           <a href="project.html">Google UX Workshop</a>
