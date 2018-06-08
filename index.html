@@ -22,7 +22,8 @@
         margin: 0 auto;
       }
       .header,
-      .footer {
+      .footer,
+      .date {
         width: 100%;
         text-align: center;
       }
@@ -30,7 +31,7 @@
         .container {
           grid-template-columns: 1fr;
         }
-        .first, .header, .footer {
+        .first, .header, .footer, .date {
           grid-column-start: 1;
           grid-column-end: 1;
         }
@@ -39,7 +40,7 @@
         .container {
           grid-template-columns: 1fr 1fr;
         }
-        .first, .header, .footer {
+        .first, .header, .footer, .date {
           grid-column-start: 1;
           grid-column-end: 3;
         }
@@ -53,7 +54,8 @@
           grid-column-end: 3;
         }
         .header,
-        .footer {
+        .footer,
+        .date {
           grid-column-start: 1;
           grid-column-end: 4;
         }
@@ -127,14 +129,15 @@
       .header ul > li:last-child {
         margin-right: 0px;
       }
-      .footer {
+      .footer,
+      .date {
         background-color: #f4f6f8;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="header">
+      <header class="header">
         <h1>Sam Thompson</h1>
         <div class="nav-line">
           <ul>
@@ -143,6 +146,9 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
+      </header>
+      <div class="date">
+        <p>2018</p>
       </div>
       <div class="first" id="portfolio">
         <div class="card-image" style="background-image:url('images/google-balloon.png')"></div>
@@ -150,6 +156,9 @@
           <a href="project.html">Google UX Workshop</a>
           <p>January 2018</p>
         </div>
+      </div>
+      <div class="date">
+        <p>2017</p>
       </div>
       <div>
         <div class="card-image" style="background-image:url('images/amp-card.png')"></div>
@@ -178,6 +187,9 @@
           <a href="project.html">React App</a>
           <p>January 2017</p>
         </div>
+      </div>
+      <div class="date">
+        <p>2016</p>
       </div>
       <div>
         <div class="card-image" style="background-image:url('images/drupal-card.png')"></div>
@@ -214,6 +226,9 @@
           <p>April 2016</p>
         </div>
       </div>
+      <div class="date">
+        <p>2015</p>
+      </div>
       <div>
         <div class="card-image" style="background-image:url('images/parse-card.png')"></div>
         <div class="card-content">
@@ -234,6 +249,9 @@
           <a href="project.html">Responsive Conversion</a>
           <p>April 2015</p>
         </div>
+      </div>
+      <div class="date">
+        <p>2014</p>
       </div>
       <div>
         <div class="card-image" style="background-image:url('images/website-performance-card.png')"></div>
@@ -298,6 +316,9 @@
           <p>Feburary 2014</p>
         </div>
       </div>
+      <div class="date">
+        <p>2013</p>
+      </div>
       <div>
         <div class="card-image" style="background-image:url('images/apple-card.png')"></div>
         <div class="card-content">
@@ -333,12 +354,18 @@
           <p>Feburary 2013</p>
         </div>
       </div>
+      <div class="date">
+        <p>2011</p>
+      </div>
       <div>
         <div class="card-image" style="background-image:url('images/scrum-aliance-card.png')"></div>
         <div class="card-content">
           <a href="project.html">Certified Scrum Master</a>
           <p>December 2011</p>
         </div>
+      </div>
+      <div class="date">
+        <p>1996 - 2010</p>
       </div>
       <div>
         <div class="card-image" style="background-image:url('images/history-card.png')"></div>
@@ -347,9 +374,9 @@
           <p>January 2010</p>
         </div>
       </div>
-      <div class="footer">
+      <footer class="footer">
         <p>&copy; 1996 - 2018 Sam Thompson</p>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
