@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sam Thompson - Web Developer</title>
+    <title>Sam Thompson - Frontend Web Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Rubik:400,500" rel="stylesheet">
     <style>
       /*
@@ -22,16 +22,14 @@
         margin: 0 auto;
       }
       .header,
-      .footer,
-      .date {
-        width: 100%;
+      .footer {
         text-align: center;
       }
       @media (max-width: 599px) {
         .container {
           grid-template-columns: 1fr;
         }
-        .first, .header, .footer, .date {
+        .header, .footer, .date {
           grid-column-start: 1;
           grid-column-end: 1;
         }
@@ -40,7 +38,7 @@
         .container {
           grid-template-columns: 1fr 1fr;
         }
-        .first, .header, .footer, .date {
+        .header, .footer, .date {
           grid-column-start: 1;
           grid-column-end: 3;
         }
@@ -48,10 +46,6 @@
       @media (min-width: 900px) {
         .container {
           grid-template-columns: 1fr 1fr 1fr;
-        }
-        .first {
-          grid-column-start: 1;
-          grid-column-end: 3;
         }
         .header,
         .footer,
@@ -97,6 +91,15 @@
         font-family: 'Playfair Display', serif;
         font-weight: 400;
         color: #b70038;
+        margin-bottom: 0;
+      }
+      h2 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        color: #5d7292;
+        font-size: 1.1em;
+        margin-top: 0;
+        margin-bottom: 40px;
       }
       .header .nav-line {
         background-image: url('images/line.png');
@@ -110,7 +113,7 @@
         background-color: #fff;
         list-style-type: none;
         padding: 0 20px;
-        margin: 0 0 30px 0;
+        margin: 0;
       }
       .header ul > li {
         display: inline-block;
@@ -129,9 +132,14 @@
       .header ul > li:last-child {
         margin-right: 0px;
       }
-      .footer,
+      .footer {
+        background-color: #f4f6f8;
+      }
       .date {
         background-color: #f4f6f8;
+        border: 1px solid #ecf0f1;
+        padding: 5px 32px;
+        font-size: 19px;
       }
     </style>
   </head>
@@ -139,6 +147,7 @@
     <div class="container">
       <header class="header">
         <h1>Sam Thompson</h1>
+        <h2>Frontend Web Developer</h2>
         <div class="nav-line">
           <ul>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -150,7 +159,7 @@
       <div class="date">
         <p>2018</p>
       </div>
-      <div class="first" id="portfolio">
+      <div id="portfolio">
         <div class="card-image" style="background-image:url('images/google-balloon.png')"></div>
         <div class="card-content">
           <a href="project.html">Google UX Workshop</a>
