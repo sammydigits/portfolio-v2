@@ -54,38 +54,46 @@
           grid-column-end: 4;
         }
       }
-      .card-image {
-        background-color: #f4f6f8;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        -webkit-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out;
-        padding-top: 250px;
-      }
-      .card-content {
-        padding-top: 15px;
-      }
-      .card-content a {
+      .card a {
         text-decoration: none;
         color: #222;
         font-size: 19px;
         font-weight: 500;
       }
-      .card-content a:active,
-      .card-content a:focus,
-      .card-content a:hover {
+      .card a:active,
+      .card a:focus,
+      .card a:hover {
         color: #b70038;
       }
-      .card-content a > i {
-        color: #5d738d;
+      .card a > .card-image:hover {
+        -webkit-box-shadow: 1px 1px 10px 3px rgba(204,204,204,1);
+        -moz-box-shadow: 1px 1px 10px 3px rgba(204,204,204,1);
+        box-shadow: 1px 1px 10px 3px rgba(204,204,204,1);
+      }
+      .card-image {
+        background-color: #f4f6f8;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        padding-top: 250px;
+      }
+      .card-content {
+        padding-top: 15px;
       }
       .card-content p {
+        margin: 0;
+      }
+      .card-content span {
         font-size: 12px;
         color: #5d738d;
         text-transform: uppercase;
         letter-spacing: 1px;
         margin-top: 10px;
+      }
+      .card-content p > i {
+        color: #5d738d;
       }
       h1 {
         font-family: 'Playfair Display', serif;
@@ -156,39 +164,56 @@
           </ul>
         </div>
       </header>
-      <div class="date">
+      <div class="date" id="portfolio">
         <p>2018</p>
       </div>
-      <div id="portfolio">
-        <div class="card-image" style="background-image:url('images/google-balloon.png')"></div>
-        <div class="card-content">
-          <a href="project.html">Google UX Workshop</a>
-          <p>January 2018</p>
-        </div>
+      <div class="card">
+        <a href="project.html">
+          <div class="card-image" style="background-image:url('images/netlify-card.png')"></div>
+          <div class="card-content">
+            <p><i>Side Project</i> - Portfolio</p>
+            <span>June 2018</span>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="project.html">
+          <div class="card-image" style="background-image:url('images/google-balloon.png')"></div>
+          <div class="card-content">
+            <p>Google UX Workshop</p>
+            <span>January 2018</span>
+          </div>
+        </a>
       </div>
       <div class="date">
         <p>2017</p>
       </div>
-      <div>
-        <div class="card-image" style="background-image:url('images/amp-card.png')"></div>
-        <div class="card-content">
-          <a href="project.html">AMP Theme for Drupal 7</a>
-          <p>November 2017</p>
-        </div>
+      <div class="card">
+        <a href="project.html">
+          <div class="card-image" style="background-image:url('images/amp-card.png')"></div>
+          <div class="card-content">
+            <p>AMP Theme for Drupal 7</p>
+            <span>November 2017</span>
+          </div>
+        </a>
       </div>
-      <div>
-        <div class="card-image" style="background-image:url('images/wordpress-to-drupal.png')"></div>
-        <div class="card-content">
-          <a href="project.html">Wordpress to Drupal Migration</a>
-          <p>September 2017</p>
-        </div>
+      <div class="card">
+        <a href="project.html">
+          <div class="card-image" style="background-image:url('images/wordpress-to-drupal.png')"></div>
+          <div class="card-content">
+            <p>Wordpress to Drupal Migration</p>
+            <span>September 2017</span>
+          </div>
+        </a>
       </div>
-      <div>
-        <div class="card-image" style="background-image:url('images/litmus-card.png')"></div>
-        <div class="card-content">
-          <a href="project.html">Litmus Email Testing</a>
-          <p>March 2017</p>
-        </div>
+      <div class="card">
+        <a href="project.html">
+          <div class="card-image" style="background-image:url('images/litmus-card.png')"></div>
+          <div class="card-content">
+            <p>Litmus Email Testing</p>
+            <span>March 2017</span>
+          </div>
+        </a>
       </div>
       <div>
         <div class="card-image" style="background-image:url('images/react-card.png')"></div>
